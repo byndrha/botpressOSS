@@ -20,7 +20,7 @@
     "version": "1.2.18"
   },
   "scripts": {
-    "postinstall": "yarn cmd postinstall",
+    "postinstall": "apt-get update && apt-get install -y python2.7 && yarn cmd postinstall",
     "start": "yarn workspace botpress start",
     "cmd": "yarn run gulp",
     "build": "yarn cmd build",
